@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+	<video id="1">
+	    <info>哔哩哔哩弹幕视频网</info>
+		<enter>ul.nav-menu > li.m-i > ul.i_num > li > a[href]</enter>
+		<more>div.b-link-more > a[href]</more>
+		<list>div.video-list</list>
+		<item>div.l-item</item>
+		<!-- 页码 -->
+		<pagebox>div.pagelistbox</pagebox>
+		<pageCount>a[href].endPage</pageCount>
+		<!--视频信息-->
+		<title>a[href].title</title>
+		<author>a.v-author</author>
+		<intro>div.v-desc</intro>
+		<watchCount>span.gk</watchCount>
+		<collectCount>span.sc</collectCount>
+		<danmakuCount>span.dm</danmakuCount>
+		<createTime>span.v-date</createTime>
+		<url>a[href].title</url>
+	</video>
+	<video id="2">
+	    <info>优酷视频网</info>
+		<enter>div.yk-nav-main > ul > li:not(.current) > a[href]</enter>
+		<more>div:matches((yk-append)|(yk-extend)) > a[href]</more>
+		<list>div.yk-filterresult</list>
+		<item>div.p, div.p-small</item>
+		<!-- 页码 -->
+		<pagebox>ul.yk-pages</pagebox>
+		<pageCount>null</pageCount>
+		<!--视频信息-->
+		<title>div.p-meta-title.title</title>
+		<author>span.p-actor</author>
+		<intro>null</intro>
+		<watchCount>span.p-num</watchCount>
+		<collectCount>null</collectCount>
+		<danmakuCount>null</danmakuCount>
+		<createTime>span.p-status</createTime>
+		<url>a[href].title</url>
+	</video>
+</pattern>

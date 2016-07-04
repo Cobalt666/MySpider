@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conf>
+	<crawler id="1">
+		<enterUrl>http://www.cnblogs.com</enterUrl>
+		<description>测试</description>
+		<!-- 线程数 -->
+		<threadCount>10</threadCount>
+		<!-- 满多少条进行数据库插入 -->
+		<cacheCount>100</cacheCount>
+		<!-- 爬虫深度 -->
+		<crawlerDepth>5</crawlerDepth>
+	</crawler>
+	<crawler id="2">
+		<enterUrl>http://www.bilibili.com/</enterUrl>
+		<description>哔哩哔哩弹幕视频网</description>
+		<threadCount>5</threadCount>
+		<cacheCount>50</cacheCount>
+		<crawlerDepth>5</crawlerDepth>
+	</crawler>
+	<crawler id="3">
+		<enterUrl>http://www.youku.com/</enterUrl>
+		<description>优酷视频网</description>
+		<threadCount>5</threadCount>
+		<cacheCount>50</cacheCount>
+		<crawlerDepth>5</crawlerDepth>
+	</crawler>
+</conf>
