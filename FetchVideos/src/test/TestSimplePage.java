@@ -62,6 +62,7 @@ public class TestSimplePage implements Runnable {
 
 	public void run() {
 		getSubLinks(url);
+		//changed
 	}
 
 }
