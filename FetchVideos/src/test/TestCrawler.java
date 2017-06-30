@@ -124,4 +124,8 @@ public class TestCrawler implements Runnable {
 			bloomFilter.add(url.toLowerCase());
 		}
 	}
+	
+	public void changed(){
+		System.out.println("changed");
+	}
 }
